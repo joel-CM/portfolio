@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,12 +11,14 @@
     <title>{{myself.name}} {{myself.lastname}}</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <header>
-        <h1 class="h1 text-center">portfolio de {{myself.name}}</h1>
-      </header>
-      <img class="img-fluid" src="{{myself.photo.url}}" alt="{{myself.name}}" />
-    </div>
+    <!-- block header -->
+    {% block header %}{% endblock %}
+
+    <!-- block content -->
+    {% block content %}{% endblock %}
+
+    <!-- block footer -->
+    {% block footer %}{% endblock %}
 
     <!-- bootstrap js CDN -->
     <script
