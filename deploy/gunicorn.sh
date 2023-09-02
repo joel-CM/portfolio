@@ -1,4 +1,4 @@
-#|/usr/bin/bash
+#!/usr/bin/bash
 
 NAME="portfolio"
 DJANGODIR=$(dirname $(cd `dirname $0` && pwd))
