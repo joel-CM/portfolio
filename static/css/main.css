@@ -79,6 +79,7 @@ body {
 
 .about-me__photo {
   border-radius: 50%;
+  width: 70%;
 }
 
 .about-me__resume {
