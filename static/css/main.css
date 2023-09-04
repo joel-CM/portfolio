@@ -103,3 +103,13 @@ body {
   font-family: "Handjet", cursive;
   color: var(--color-blue);
 }
+
+/* FOOTER SECTION ------------------------------------------------- */
+.footer__title {
+  font-family: "Handjet", cursive;
+}
+
+.footer .icon {
+  font-size: 3rem;
+  cursor: pointer;
+}
