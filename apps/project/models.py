@@ -7,3 +7,6 @@ class Project(models.Model):
     photo = models.ImageField(blank=True)
     source = models.CharField(blank=True, max_length=1000)
     site = models.CharField(blank=True, max_length=1000)
+
+    def __str__(self):
+        return self.name
