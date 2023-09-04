@@ -10,3 +10,6 @@ class Myself(models.Model):
     photo = models.ImageField(blank=True)
     github = models.CharField(max_length=500, blank=True)
     linkedin = models.CharField(max_length=500, blank=True)
+
+    def __str__(self) :
+        return self.name
