@@ -1,3 +1,4 @@
+{% load static %}
 <header class="container-fluid header" id="header">
   <!-- include navbar component -->
   {% include "components/navbar.html" %}
@@ -13,8 +14,12 @@
       <strong class="text-center d-block">Full stack web developer</strong>
     </div>
     <!-- download cv btn -->
-    <button class="main-title__download-cv btn btn-outline-success mb-5">
+    <a
+      class="main-title__download-cv btn btn-outline-success mb-5"
+      href="{% static 'downloads/joel-chavez.pdf' %}"
+      download
+    >
       Download CV
-    </button>
+    </a>
   </div>
 </header>
